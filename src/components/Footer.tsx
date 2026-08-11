@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import LogoLight from "../img/logo-light.webp";
+import Logo from "../img/logo.jpeg";
 
 const Footer = () => {
   return (
@@ -10,10 +10,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <img src={LogoLight} width={200} alt="Logo | LawEdge" />
+            <img src={Logo} className="h-16 w-auto rounded-lg" alt="Samvidhi Legal Solutions LLP" />
             <p className="text-gray-300 leading-relaxed">
-              Providing exceptional legal counsel with integrity, dedication,
-              and results-driven advocacy for over 25 years.
+              Samvidhi Legal Solutions LLP is committed to empowering justice and enabling progress through dedicated legal representation and expert counsel.
+            </p>
+            <p className="text-law-gold italic text-sm font-medium">
+              "Empowering Justice, Enabling Progress"
             </p>
           </div>
 
@@ -22,11 +24,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-law-gold">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { name: "About Us", path: "#" },
-                { name: "Services", path: "#" },
-                { name: "Attorneys", path: "#" },
-                { name: "Testimonials", path: "#" },
-                { name: "Blog", path: "#" },
+                { name: "About Us", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Our Team", path: "/attorneys" },
+                { name: "Testimonials", path: "/testimonials" },
+                { name: "Blog", path: "/blog" },
+                { name: "Contact", path: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -42,24 +45,22 @@ const Footer = () => {
 
           {/* Practice Areas */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-law-gold">
-              Practice Areas
-            </h4>
+            <h4 className="text-lg font-semibold text-law-gold">Practice Areas</h4>
             <ul className="space-y-2">
               {[
-                { name: "Family Law", id: "family-law" },
-                { name: "Criminal Defense", id: "criminal-defense" },
-                { name: "Business Law", id: "business-law" },
-                { name: "Personal Injury", id: "personal-injury" },
-                { name: "Estate Planning", id: "estate-planning" },
-                { name: "Immigration Law", id: "immigration-law" },
+                "Civil Litigation",
+                "Criminal Defense",
+                "Corporate & Commercial Law",
+                "Family & Matrimonial Law",
+                "Property & Real Estate Law",
+                "Consumer Protection",
               ].map((area) => (
-                <li key={area.id}>
+                <li key={area}>
                   <Link
-                    to="#"
+                    to="/services"
                     className="text-gray-300 hover:text-law-gold transition-colors duration-200"
                   >
-                    {area.name}
+                    {area}
                   </Link>
                 </li>
               ))}
@@ -68,36 +69,31 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-law-gold">
-              Contact Info
-            </h4>
+            <h4 className="text-lg font-semibold text-law-gold">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-law-gold mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-300">
-                    123 Justice Boulevard
-                    <br />
-                    Suite 456
-                    <br />
-                    Metro City, MC 12345
-                  </p>
-                </div>
+                <p className="text-gray-300">
+                  Samvidhi Legal Solutions LLP
+                  <br />
+                  Lucknow, Uttar Pradesh
+                  <br />
+                  India
+                </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-law-gold" />
-                <p className="text-gray-300">(555) 123-4567</p>
+                <p className="text-gray-300">+91 98765 43210</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-law-gold" />
-                <p className="text-gray-300">info@lawedge.com</p>
+                <p className="text-gray-300 text-sm">samvidhilegalsolutionsllp@gmail.com</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-law-gold mt-1" />
                 <div className="text-gray-300">
-                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 2:00 PM</p>
-                  <p>Emergency: 24/7</p>
+                  <p>Mon-Sat: 9:00 AM - 7:00 PM</p>
+                  <p>Sun: By Appointment</p>
                 </div>
               </div>
             </div>
@@ -107,8 +103,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-gray-300 text-sm">
-              © {new Date().getFullYear()} LawEdge. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Samvidhi Legal Solutions LLP. All rights reserved.
             </p>
           </div>
         </div>
