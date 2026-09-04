@@ -23,6 +23,7 @@ const Navigation = () => {
     { name: "Services", path: "/services" },
     { name: "Our Team", path: "/attorneys" },
     { name: "Testimonials", path: "/testimonials" },
+    { name: "Practice Guide", path: "/practice-guide" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
@@ -59,16 +60,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          <div className="hidden md:block">
-            <Button
-              asChild
-              className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold px-6 py-2 rounded-lg transition-all duration-200 hover:shadow-lg"
-            >
-              <Link to="/contact">Free Consultation</Link>
-            </Button>
-          </div>
-
-          <Button
+<Button
             variant="ghost"
             size="sm"
             className="lg:hidden"
@@ -95,13 +87,6 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button
-                asChild
-                className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold w-full mt-4"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Link to="/contact">Free Consultation</Link>
-              </Button>
             </div>
           </div>
         )}

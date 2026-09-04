@@ -249,7 +249,7 @@ const Services = () => {
             Need Legal Help?
           </h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Contact us for a free consultation. Our team will assess your case and provide the best legal strategy.
+            Contact us today. Our team will assess your case and provide the best legal strategy.
           </p>
           <Button
             asChild
@@ -257,7 +257,7 @@ const Services = () => {
             className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold px-8 py-4 text-lg"
           >
             <Link to="/contact">
-              Get Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
+              Contact Us <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
         </div>

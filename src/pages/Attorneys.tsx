@@ -21,14 +21,14 @@ const Attorneys = () => {
       phone: "+91 98765 43210",
     },
     {
-      name: "Adv. Priya Sharma",
-      role: "Senior Associate",
+      name: "Adv. Pragya Phatak",
+      role: "Associate",
       image: PriyaImg,
       specializations: ["Family Law", "Consumer Protection", "Property Disputes", "Documentation"],
       education: "B.A. LL.B.",
       experience: "5+ Years",
       courts: "District Courts, Family Courts, Consumer Forums",
-      bio: "Advocate Priya Sharma is a senior associate at Samvidhi Legal Solutions LLP, specializing in family and matrimonial law, consumer protection, and property disputes. Known for her empathetic approach and sharp legal acumen, she handles sensitive family matters with discretion and dedication. Priya has represented numerous clients in divorce proceedings, custody battles, domestic violence cases, and consumer complaints. Her strength lies in her ability to balance compassion with aggressive legal advocacy. She is also adept at legal drafting and documentation, ensuring all legal instruments are precise and comprehensive.",
+      bio: "Advocate Pragya Phatak is an associate at Samvidhi Legal Solutions LLP, specializing in family and matrimonial law, consumer protection, and property disputes. Known for her empathetic approach and sharp legal acumen, she handles sensitive family matters with discretion and dedication. Pragya has represented numerous clients in divorce proceedings, custody battles, domestic violence cases, and consumer complaints. Her strength lies in her ability to balance compassion with aggressive legal advocacy. She is also adept at legal drafting and documentation, ensuring all legal instruments are precise and comprehensive.",
       email: "samvidhilegalsolutionsllp@gmail.com",
       phone: "+91 98765 43211",
     },
@@ -189,7 +189,7 @@ const Attorneys = () => {
             Want to Work With Us?
           </h2>
           <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-            Schedule a consultation with one of our advocates today. We'll review your case and provide expert guidance.
+            Reach out to one of our advocates today. We'll review your case and provide expert guidance.
           </p>
           <Button
             asChild
@@ -197,7 +197,7 @@ const Attorneys = () => {
             className="bg-royal-blue hover:bg-royal-blue/90 text-white font-semibold px-8 py-4 text-lg"
           >
             <Link to="/contact">
-              Schedule Consultation <ArrowRight className="ml-2 w-5 h-5" />
+              Contact Us <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
         </div>
