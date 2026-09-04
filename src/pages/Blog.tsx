@@ -14,24 +14,27 @@ const Blog = () => {
       date: "August 5, 2026",
       readTime: "8 min read",
       category: "Property Law",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
     },
     {
       title: "Divorce Proceedings in India: What You Need to Know",
       excerpt:
         "Navigating divorce can be overwhelming. This guide covers the types of divorce, grounds, procedure, maintenance, and child custody provisions under Indian law.",
-      author: "Adv. Priya Sharma",
+      author: "Adv. Pragya Phatak",
       date: "July 28, 2026",
       readTime: "10 min read",
       category: "Family Law",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80",
     },
     {
       title: "How to File a Consumer Complaint: Step-by-Step Guide",
       excerpt:
         "Consumer protection laws in India empower buyers to seek redressal. Learn how to file a complaint, what documents you need, and what remedies are available.",
-      author: "Adv. Priya Sharma",
+      author: "Adv. Pragya Phatak",
       date: "July 15, 2026",
       readTime: "6 min read",
       category: "Consumer Protection",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80",
     },
     {
       title: "Bail in India: Types, Procedure, and Your Rights",
@@ -41,6 +44,7 @@ const Blog = () => {
       date: "July 2, 2026",
       readTime: "7 min read",
       category: "Criminal Law",
+      image: "https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=600&q=80",
     },
     {
       title: "Starting a Business in India: Legal Checklist for Entrepreneurs",
@@ -50,15 +54,17 @@ const Blog = () => {
       date: "June 20, 2026",
       readTime: "9 min read",
       category: "Corporate Law",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80",
     },
     {
       title: "Tenant Rights and Landlord Obligations Under Indian Law",
       excerpt:
         "Rent disputes are common in urban India. Understand the rights and obligations of both tenants and landlords, eviction procedures, and rent control laws.",
-      author: "Adv. Priya Sharma",
+      author: "Adv. Pragya Phatak",
       date: "June 8, 2026",
       readTime: "7 min read",
       category: "Property Law",
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80",
     },
   ];
 
@@ -122,11 +128,17 @@ const Blog = () => {
                 key={index}
                 className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group"
               >
-                <div className="h-48 bg-gradient-to-br from-royal-blue to-royal-blue/80 flex items-center justify-center p-6">
-                  <span className="bg-law-gold text-royal-blue text-xs font-bold px-3 py-1 rounded-full absolute top-4 left-4">
+                <div className="h-48 relative overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-royal-blue/60"></div>
+                  <span className="bg-law-gold text-royal-blue text-xs font-bold px-3 py-1 rounded-full absolute top-4 left-4 z-10">
                     {post.category}
                   </span>
-                  <h3 className="text-xl font-serif font-bold text-white text-center leading-tight">
+                  <h3 className="absolute inset-0 flex items-center justify-center text-xl font-serif font-bold text-white text-center leading-tight p-6 z-10">
                     {post.title}
                   </h3>
                 </div>
@@ -197,7 +209,7 @@ const Blog = () => {
             Have a Legal Question?
           </h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Our team is ready to help. Get a free initial consultation and expert legal advice.
+            Our team is ready to help. Reach out for expert legal advice.
           </p>
           <Button
             asChild

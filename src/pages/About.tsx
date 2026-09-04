@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Shield, Users, Award, Scale, ArrowRight } from "lucide-react";
-import WhoWeAreImg from "../img/lawyer-judge-counselor-having-team-meeting-with-client-law-legal-services.webp";
+import Logo from "../img/logo2.jpeg";
 import PuneetImg from "../img/puneet.jpeg";
 
 const About = () => {
@@ -77,13 +77,12 @@ const About = () => {
                 We take pride in our track record of delivering favorable outcomes while maintaining the highest standards of legal ethics and professionalism.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center bg-gray-50 rounded-lg shadow-2xl p-8">
               <img
-                src={WhoWeAreImg}
-                alt="Samvidhi Legal Solutions Team"
-                className="rounded-lg shadow-2xl w-full h-auto"
+                src={Logo}
+                alt="Samvidhi Legal Solutions LLP"
+                className="w-full max-w-md h-auto"
               />
-              <div className="absolute inset-0 bg-royal-blue/10 rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -215,7 +214,7 @@ const About = () => {
             Ready to Discuss Your Case?
           </h2>
           <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
-            Contact us today for a free initial consultation. We are here to help you navigate your legal challenges.
+            Contact us today. We are here to help you navigate your legal challenges.
           </p>
           <Button
             asChild

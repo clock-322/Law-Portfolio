@@ -17,8 +17,7 @@ import {
   Star,
   Phone,
 } from "lucide-react";
-import HeroBG from "../img/hero-bg.webp";
-import WhoWeAreImg from "../img/lawyer-judge-counselor-having-team-meeting-with-client-law-legal-services.webp";
+import Logo from "../img/logo2.jpeg";
 import PuneetImg from "../img/puneet.jpeg";
 import PriyaImg from "../img/priya.jpeg";
 
@@ -79,12 +78,12 @@ const Home = () => {
         "A dedicated advocate with deep expertise in civil and criminal litigation. Puneet founded Samvidhi Legal Solutions LLP with a vision to make quality legal services accessible to all.",
     },
     {
-      name: "Adv. Priya Sharma",
-      role: "Senior Associate",
+      name: "Adv. Pragya Phatak",
+      role: "Associate",
       image: PriyaImg,
       specialization: "Family Law, Consumer Protection & Property Disputes",
       description:
-        "An accomplished advocate specializing in family and matrimonial law. Priya brings empathy and sharp legal acumen to every case she handles.",
+        "An accomplished advocate specializing in family and matrimonial law. Pragya brings empathy and sharp legal acumen to every case she handles.",
     },
   ];
 
@@ -117,8 +116,13 @@ const Home = () => {
         }}
       >
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: `url(${HeroBG})` }}
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&q=80')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
         />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <p className="text-law-gold text-lg md:text-xl font-medium mb-4 tracking-wider uppercase animate-fade-in">
@@ -135,13 +139,6 @@ const Home = () => {
             advisory, our experienced team delivers results you can trust.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button
-              asChild
-              size="lg"
-              className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-200 hover:shadow-xl"
-            >
-              <Link to="/contact">Schedule Free Consultation</Link>
-            </Button>
             <Button
               asChild
               variant="outline"
@@ -204,7 +201,7 @@ const Home = () => {
                   size="lg"
                   className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold px-8 py-4"
                 >
-                  <Link to="/contact">Schedule a Consultation</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
                 <Button
                   asChild
@@ -216,13 +213,12 @@ const Home = () => {
                 </Button>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center bg-gray-50 rounded-lg shadow-2xl p-8">
               <img
-                src={WhoWeAreImg}
-                alt="Team at Samvidhi Legal Solutions"
-                className="rounded-lg shadow-2xl w-full h-auto"
+                src={Logo}
+                alt="Samvidhi Legal Solutions LLP"
+                className="w-full max-w-md h-auto"
               />
-              <div className="absolute inset-0 bg-royal-blue/10 rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -419,18 +415,9 @@ const Home = () => {
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
             Whether you're facing a legal dispute or need expert advisory, our
-            team is ready to help. Get a free initial consultation today.
+            team is ready to help. Reach out to us today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
-              size="lg"
-              className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold px-8 py-4 text-lg rounded-lg"
-            >
-              <Link to="/contact">
-                Book Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </Button>
             <Button
               size="lg"
               variant="outline"

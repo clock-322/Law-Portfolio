@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Layout from "./components/Layout";
+import DisclaimerModal from "./components/DisclaimerModal";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -13,6 +14,7 @@ import Attorneys from "./pages/Attorneys";
 import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import PracticeGuide from "./pages/PracticeGuide";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,7 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <DisclaimerModal />
         <Toaster />
         <Sonner />
         <BrowserRouter>
@@ -41,6 +44,7 @@ const App = () => {
               <Route path="/testimonials" element={<Testimonials />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/practice-guide" element={<PracticeGuide />} />
             </Routes>
           </Layout>
         </BrowserRouter>

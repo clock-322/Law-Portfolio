@@ -61,7 +61,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">Contact Us</h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Get in touch with our legal team for a free initial consultation. We're here to help you with your legal needs.
+            Get in touch with our legal team. We're here to help you with your legal needs.
           </p>
           <div className="flex items-center justify-center mt-6 text-sm text-gray-400">
             <Link to="/" className="hover:text-law-gold transition-colors">Home</Link>
@@ -233,15 +233,15 @@ const Contact = () => {
                 <div className="bg-royal-blue p-8 text-white">
                   <div className="flex items-center mb-4">
                     <MessageSquare className="w-8 h-8 text-law-gold mr-3" />
-                    <h3 className="text-2xl font-serif font-bold">Free Legal Consultation</h3>
+                    <h3 className="text-2xl font-serif font-bold">Legal Assistance</h3>
                   </div>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    We offer a free initial consultation to understand your legal needs. Our advocates will assess your case and provide you with an honest evaluation and the best course of action.
+                    Reach out to us to discuss your legal needs. Our advocates will assess your case and provide you with an honest evaluation and the best course of action.
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-law-gold rounded-full mr-3"></div>
-                      <span className="text-gray-300">No obligation initial consultation</span>
+                      <span className="text-gray-300">No obligation initial discussion</span>
                     </div>
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-law-gold rounded-full mr-3"></div>

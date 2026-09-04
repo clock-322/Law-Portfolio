@@ -186,7 +186,7 @@ const Testimonials = () => {
             className="bg-law-gold hover:bg-law-gold/90 text-royal-blue font-semibold px-8 py-4 text-lg"
           >
             <Link to="/contact">
-              Schedule Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
+              Contact Us <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
         </div>
